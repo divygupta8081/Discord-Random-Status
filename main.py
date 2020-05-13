@@ -6,7 +6,7 @@ import platform
 import time
 import colorsys
 import random
-prefix = "+"
+prefix = "§"
 bot = commands.Bot(command_prefix=prefix)
 bot.remove_command('help')
 BOT_OWNER_ROLE="owner" #change which role you need!
@@ -60,7 +60,7 @@ async def on_ready():
     	await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'''{len(bot.guilds)} servers'''))
     	await asyncio.sleep(5)
 
-@bot.command(name="ping")
+@bot.command(name="hi")
 async def ping(ctx):
     '''
     This text will be shown in the help command
@@ -71,4 +71,4 @@ async def ping(ctx):
     # Send it to the user
     await ctx.send(latency)
     
-bot.run("your_self_token",bot=False)
+bot.run("NTUzMjU2OTIzMzQwODY1NTY3.Xdz1kQ.j2qXgxTR_wMXCvRlnm6Bk2Cye60",bot=False)
