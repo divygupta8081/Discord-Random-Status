@@ -16,9 +16,9 @@ BOT_OWNER_ROLE="owner" #change which role you need!
 @bot.event
 async def on_ready():
     print('Online')
-    print("Created by Captain Cool")
-    print("Trivia Savage Pro:")
-    print("https://discord.gg/cKQGjsS")
+    print("Created by Divy Gupta")
+    print("")
+    print("")
     print("Everything's all ready to go~")
     while True:
     	await bot.change_presence(activity=discord.Activity(type=1,name="with Trivia!"))
